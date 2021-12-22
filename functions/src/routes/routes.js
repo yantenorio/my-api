@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const routes = Router();
 
-const controller = require('./controller');
+const controller = require('../controllers/ItemController');
 
 routes.post('/api/create', controller.createItem);
 routes.get('/api/read/:item_id', controller.getItem);
